@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Ravalic - Free HTML5 Template</title>
+<title>Jarrett's Tournament 4</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 	<link href="css/bootstrap.min.css" rel="stylesheet">
@@ -29,7 +29,7 @@
 					    <button type="button" class="navbar-toggle menu-button" data-toggle="collapse" data-target="#myNavbar">
 					        <span class="glyphicon glyphicon-align-justify"></span>
 					    </button>
-      					<a class="navbar-brand logo" href="#">Ravalic</a>
+      					<a class="navbar-brand logo" href="#">The Alberta Smash Bros Group</a>
     			</div>
 			</div>
 			<div class="col-md-8">
@@ -51,11 +51,11 @@
 		<div class="col-md-12 backg">
 			<div class="col-md-4 col-md-offset-4 inner col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-3">
 				<div class="text-box">
-                	<p class="intro">Introducing</p>
-                    <h2>Ravalic</h2>
-                    <h3>A Free Responsive HTML5 Template</h3>
-                    <p>By <span><a href="http://www.html5layouts.com">HTML5 Layouts</a></span></p>
-                    <p><a href="#" class="link-button">Tell Me Something</a></p>
+                	<p class="intro">Alberta Smash Group Presents</p>
+                    <h2>Jarrett's Tournament 4</h2>
+                    <h3>A Super Smash Bros Melee Charity Event</h3>
+                    <!-- <p>By <span><a href="http://www.html5layouts.com">HTML5 Layouts</a></span></p>
+                    <p><a href="#" class="link-button">Tell Me Something</a></p> -->
 				</div>
   			</div>
 		</div>
@@ -235,29 +235,29 @@
                 <div class="counter-item">
                     <i class="glyphicon glyphicon-cloud"></i>
                     <div class="timer" data-from="0" data-to="100" data-speed="5000" data-refresh-interval="50"></div>
-                    <h5>Files uploaded</h5>                               
+                    <h5>Files uploaded</h5>
                 </div>
-            </div>  
+            </div>
             <div class="col-xs-12 col-sm-3 col-md-3">
                 <div class="counter-item">
                     <i class="glyphicon glyphicon-check"></i>
                     <div class="timer" data-from="0" data-to="88" data-speed="5000" data-refresh-interval="50"></div>
-                    <h5>Projects completed</h5>                               
+                    <h5>Projects completed</h5>
                 </div>
             </div>
             <div class="col-xs-12 col-sm-3 col-md-3">
                 <div class="counter-item">
                     <i class="glyphicon glyphicon-console"></i>
                     <div class="timer" data-from="0" data-to="3297" data-speed="5000" data-refresh-interval="50"></div>
-                    <h5>Lines of code written</h5>                                                   
+                    <h5>Lines of code written</h5>
                 </div>
             </div>
             <div class="col-xs-12 col-sm-3 col-md-3">
                 <div class="counter-item">
                     <i class="glyphicon glyphicon-user"></i>
                     <div class="timer" data-from="0" data-to="86" data-speed="5000" data-refresh-interval="50"></div>
-                    <h5>Happy clients</h5>                                                   
-                </div>     
+                    <h5>Happy clients</h5>
+                </div>
 			</div>
 		</div>
 	</div>
@@ -274,12 +274,12 @@
                         <div class="form-group">
                             <input type="text" class="form-control form-effect" id="name" placeholder="Name">
                         </div>
-                        <div class="form-group">                                 
+                        <div class="form-group">
                             <input type="email" class="form-control form-effect" id="email" placeholder="Email">
                         </div>
                         <div class="form-group">
                             <textarea type="textarea" class="form-control form-effect" id="text" placeholder="Message"></textarea>
-                        </div>  
+                        </div>
                         <button type="submit" class="btn btn-default btn-sub">Submit</button>
                     </form>
 				</div>
@@ -310,7 +310,7 @@
     			</div>
    			</div>
    		</div>
-  	</div> 
+  	</div>
 </div>
 
 
@@ -346,16 +346,16 @@
     <script>
 	$(document).ready(function () {
 		$(document).on("scroll", onScroll);
- 
+
 		$('a[href^="#"]').on('click', function (e) {
 			e.preventDefault();
 			$(document).off("scroll");
- 
+
 			$('a').each(function () {
 				$(this).removeClass('active');
 			})
 			$(this).addClass('active');
- 
+
 			var target = this.hash;
 			$target = $(target);
 			$('html, body').stop().animate({
@@ -366,7 +366,7 @@
 			});
 		});
 	});
- 
+
 	function onScroll(event){
 		var scrollPosition = $(document).scrollTop();
 		$('nav a').each(function () {
@@ -390,12 +390,12 @@
           return value.toFixed(options.decimals).replace(/\B(?=(?:\d{3})+(?!\d))/g, ',');
         }
       });
- 
+
       // start all the timers
       $('#starts').waypoint(function() {
     $('.timer').each(count);
 	});
- 
+
       function count(options) {
         var $this = $(this);
         options = $.extend({}, options || {}, $this.data('countToOptions') || {});

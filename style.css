@@ -13,9 +13,9 @@
 }
 .logo
 {
-	color: #fa3447;
+	color: white;
 	font-weight: 100;
-	font-size: 30px;
+	font-size: 20px;
 	padding: 0px !important;
 	line-height: 60px;
 
@@ -99,14 +99,14 @@
 }
 .text-box p.intro
 {
-	font-size: 30px;
+	font-size: 25px;
 	font-weight: 300;
 	line-height: 1;
 	font-family: 'Poppins', sans-serif;
 }
 .text-box h2
 {
-	font-size: 55px;
+	font-size: 45px;
 	font-weight: 700;
 	color: #fff;
 	border-bottom: 7px double #fa3447;
@@ -117,7 +117,7 @@
 }
 .text-box h3
 {
-	font-size: 20px;
+	font-size: 18px;
 	font-weight: 500;
 	line-height: 1;
 }
