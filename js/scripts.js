@@ -2,7 +2,7 @@
       function initialize() {
         var mapCanvas = document.getElementById('map-canvas');
         var mapOptions = {
-          center: new google.maps.LatLng(26.802100, 75.822739),
+          center: new google.maps.LatLng(53.503698, -113.487486),
           zoom: 8,
           mapTypeId: google.maps.MapTypeId.ROADMAP
         }
@@ -15,16 +15,16 @@
     <script>
 	$(document).ready(function () {
 		$(document).on("scroll", onScroll);
- 
+
 		$('a[href^="#"]').on('click', function (e) {
 			e.preventDefault();
 			$(document).off("scroll");
- 
+
 			$('a').each(function () {
 				$(this).removeClass('active');
 			})
 			$(this).addClass('active');
- 
+
 			var target = this.hash;
 			$target = $(target);
 			$('html, body').stop().animate({
@@ -35,7 +35,7 @@
 			});
 		});
 	});
- 
+
 	function onScroll(event){
 		var scrollPosition = $(document).scrollTop();
 		$('nav a').each(function () {
@@ -61,12 +61,12 @@
           return value.toFixed(options.decimals).replace(/\B(?=(?:\d{3})+(?!\d))/g, ',');
         }
       });
- 
+
       // start all the timers
       $('#starts').waypoint(function() {
     $('.timer').each(count);
 });
- 
+
       function count(options) {
         var $this = $(this);
         options = $.extend({}, options || {}, $this.data('countToOptions') || {});
