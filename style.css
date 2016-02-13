@@ -474,12 +474,12 @@ input[placeholder], [placeholder], *[placeholder] {
     width: 100%;
 }
 .footer p {
-	text-align:  center;
-
+	text-align:  right;
+	color: #cccccc;
 	font-family: 'Poppins', sans-serif;
 }
 .footer p a {
- color: #8AB839;
+ color: #b0b0b0;
  font-family: 'Poppins', sans-serif;
 }
 
