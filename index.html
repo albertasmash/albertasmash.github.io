@@ -42,7 +42,7 @@ border: 2px solid magenta;
 .thumbnail {
 	position: relative;
 	float: left;
-	width: 33.333333%;
+	width: 33.33333%;
 }
 .thumbnail img {
 	max-height: 60px; /* 60 for 3-wide, 91 for 2-wide - probably don't need this if we just ensure all pictures have the same aspect ratio */
@@ -70,6 +70,8 @@ border: 2px solid magenta;
 </style>
 </head>
 <body>
+
+	<!-- NAVIGATION SECTION -->
 	<header class="header">
 		<div class="container">
 			<div class="row">
@@ -95,6 +97,7 @@ border: 2px solid magenta;
 		</div>
 	</header>
 
+	<!-- MAIN SECTION -->
 	<div class="container-fluid main" id="page-top">
 		<div class="row">
 			<div class="col-md-12 backg">
@@ -119,6 +122,7 @@ border: 2px solid magenta;
 		</div>
 	</div>
 
+	<!-- PHOTOS SECTION -->
 	<div class="container-fluid photos" id="section2">
 		<div class="container">
 			<div class="row" id="starts">
@@ -137,355 +141,325 @@ border: 2px solid magenta;
 
 					<div class="col-md-12 col-sm-12 col-xs-12">
 						<div class="col-md-4 col-sm-4 col-xs-4" id="photos-thumbnails">
-							<!--		<div class="thumbnail">
-							<img src="images/image001.jpg" />
+							<i>Loading thumbnails...</i>
 						</div>
-						<div class="thumbnail">
-						<img src="images/image002.jpg" />
+
+						<div class="col-md-8 col-sm-8 col-xs-8 photos-display">
+							<div id="photos-mainimage">
+								<i>Loading image...</i>
+							</div>
+						</div>
 					</div>
-					<div class="thumbnail">
-					<img src="images/image003.jpg" />
 				</div>
-				<div class="thumbnail">
-				<img src="images/image004.jpg" />
 			</div>
-			<div class="thumbnail">
-			<img src="images/image005.jpg" />
 		</div>
-		<div class="thumbnail">
-		<img src="images/image006.jpg" />
 	</div>
-	<div class="thumbnail">
-	<img src="images/image007.jpg" />
-</div>
-<div class="thumbnail">
-<img src="images/image008.jpg" />
-</div>
-<div class="thumbnail">
-<img src="images/image009.jpg" />
-</div>
-<div class="thumbnail">
-<img src="images/image010.jpg" />
-</div>
-<div class="thumbnail">
-<img src="images/image011.jpg" />
-</div>
-<div class="thumbnail">
-<img src="images/image012.jpg" />
-</div>
-<div class="thumbnail">
-<img src="images/image013.jpg" />
-</div>
-<div class="thumbnail">
-<img src="images/image014.jpg" />
-</div>
-<div class="thumbnail">
-<img src="images/image015.jpg" />
-</div>
-<div class="thumbnail">
-<img src="images/image016.jpg" />
-</div>
-<div class="thumbnail">
-<img src="images/image017.jpg" />
-</div>
-<div class="thumbnail">
-<img src="images/image018.jpg" />
-</div> -->
-</div>
 
-
-<div class="col-md-8 col-sm-8 col-xs-8 photos-display">
-	<div id="photos-mainimage">
-		<img src="images/image001.jpg" />
+	<!-- DONATION SECTION -->
+	<div class="container-fluid donate" id="section3">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<h2 class="text-center donate-text">Donate</h2>
+					<div class="col-md-6 col-sm-12 col-xs-12 icon-box">
+						<div class="col-md-2 col-sm-2 col-xs-12">
+							<div class="iconing">
+								<i class="glyphicon glyphicon-pencil"></i>
+							</div>
+						</div>
+						<div class="col-md-9 col-md-offset-1 col-sm-10 col-xs-12 icon-text-box">
+							<h4>Modern Design</h4>
+							<p>Lorem ipsum dolor sit amet, consectetur elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+						</div>
+					</div>
+					<div class="col-md-6 col-sm-12 col-xs-12 icon-box">
+						<div class="col-md-2 col-sm-2 col-xs-12">
+							<div class="iconing">
+								<i class="glyphicon glyphicon-cog"></i>
+							</div>
+						</div>
+						<div class="col-md-9 col-md-offset-1 col-sm-10 col-xs-12 icon-text-box">
+							<h4>Easy To Customize</h4>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+						</div>
+					</div>
+					<div class="col-md-6 col-sm-12 col-xs-12 icon-box">
+						<div class="col-md-2 col-sm-2 col-xs-12">
+							<div class="iconing">
+								<i class="glyphicon glyphicon-time"></i>
+							</div>
+						</div>
+						<div class="col-md-9 col-md-offset-1 col-sm-10 col-xs-12 icon-text-box">
+							<h4>Save Time</h4>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, adipiscing elit.</p>
+						</div>
+					</div>
+					<div class="col-md-6 col-sm-12 col-xs-12 icon-box">
+						<div class="col-md-2 col-sm-2 col-xs-12">
+							<div class="iconing">
+								<i class="glyphicon glyphicon-briefcase"></i>
+							</div>
+						</div>
+						<div class="col-md-9 col-md-offset-1 col-sm-10 col-xs-12 icon-text-box">
+							<h4>Professional Work</h4>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit consectetur adipiscing elit.</p>
+						</div>
+					</div>
+					<div class="col-md-6 col-sm-12 col-xs-12 icon-box">
+						<div class="col-md-2 col-sm-2 col-xs-12">
+							<div class="iconing">
+								<i class="glyphicon glyphicon-user"></i>
+							</div>
+						</div>
+						<div class="col-md-9 col-md-offset-1 col-sm-10 col-xs-12 icon-text-box">
+							<h4>User-friendly Interface</h4>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit consectetur adipiscing elit.</p>
+						</div>
+					</div>
+					<div class="col-md-6 col-sm-12 col-xs-12 icon-box">
+						<div class="col-md-2 col-sm-2 col-xs-12">
+							<div class="iconing">
+								<i class="glyphicon glyphicon-heart"></i>
+							</div>
+						</div>
+						<div class="col-md-9 col-md-offset-1 col-sm-10 col-xs-12 icon-text-box">
+							<h4>Made With Love</h4>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 	</div>
-</div>
-</div>
 
 
-</div>
-</div>
-</div>
-</div>
-
-<div class="container-fluid donate" id="section3">
-	<div class="container">
-		<div class="row">
-			<div class="col-md-12">
-				<h2 class="text-center donate-text">Donate</h2>
-				<div class="col-md-6 col-sm-12 col-xs-12 icon-box">
-					<div class="col-md-2 col-sm-2 col-xs-12">
-						<div class="iconing">
-							<i class="glyphicon glyphicon-pencil"></i>
-						</div>
-					</div>
-					<div class="col-md-9 col-md-offset-1 col-sm-10 col-xs-12 icon-text-box">
-						<h4>Modern Design</h4>
-						<p>Lorem ipsum dolor sit amet, consectetur elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-					</div>
-				</div>
-				<div class="col-md-6 col-sm-12 col-xs-12 icon-box">
-					<div class="col-md-2 col-sm-2 col-xs-12">
-						<div class="iconing">
-							<i class="glyphicon glyphicon-cog"></i>
-						</div>
-					</div>
-					<div class="col-md-9 col-md-offset-1 col-sm-10 col-xs-12 icon-text-box">
-						<h4>Easy To Customize</h4>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-					</div>
-				</div>
-				<div class="col-md-6 col-sm-12 col-xs-12 icon-box">
-					<div class="col-md-2 col-sm-2 col-xs-12">
-						<div class="iconing">
-							<i class="glyphicon glyphicon-time"></i>
-						</div>
-					</div>
-					<div class="col-md-9 col-md-offset-1 col-sm-10 col-xs-12 icon-text-box">
-						<h4>Save Time</h4>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, adipiscing elit.</p>
-					</div>
-				</div>
-				<div class="col-md-6 col-sm-12 col-xs-12 icon-box">
-					<div class="col-md-2 col-sm-2 col-xs-12">
-						<div class="iconing">
-							<i class="glyphicon glyphicon-briefcase"></i>
-						</div>
-					</div>
-					<div class="col-md-9 col-md-offset-1 col-sm-10 col-xs-12 icon-text-box">
-						<h4>Professional Work</h4>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit consectetur adipiscing elit.</p>
-					</div>
-				</div>
-				<div class="col-md-6 col-sm-12 col-xs-12 icon-box">
-					<div class="col-md-2 col-sm-2 col-xs-12">
-						<div class="iconing">
+	<!-- COUNTER SECTION -->
+	<div class="container-fluid countspace">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 countbg">
+					<div class="col-xs-12 col-sm-12 col-md-12">
+						<div class="counter-item">
 							<i class="glyphicon glyphicon-user"></i>
+							<div class="timer" data-from="0" data-to="100" data-speed="5000" data-refresh-interval="50"></div>
+							<h5>Entrants For The Event</h5>
 						</div>
-					</div>
-					<div class="col-md-9 col-md-offset-1 col-sm-10 col-xs-12 icon-text-box">
-						<h4>User-friendly Interface</h4>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit consectetur adipiscing elit.</p>
-					</div>
-				</div>
-				<div class="col-md-6 col-sm-12 col-xs-12 icon-box">
-					<div class="col-md-2 col-sm-2 col-xs-12">
-						<div class="iconing">
-							<i class="glyphicon glyphicon-heart"></i>
-						</div>
-					</div>
-					<div class="col-md-9 col-md-offset-1 col-sm-10 col-xs-12 icon-text-box">
-						<h4>Made With Love</h4>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing.</p>
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
-</div>
 
 
-
-
-
-
-
-
-<div class="container-fluid countspace">
-	<div class="container">
-		<div class="row">
-			<div class="col-md-12 countbg">
-				<div class="col-xs-12 col-sm-3 col-md-6">
-					<div class="counter-item">
-						<i class="glyphicon glyphicon-user"></i>
-						<div class="timer" data-from="0" data-to="100" data-speed="5000" data-refresh-interval="50"></div>
-						<h5>Entrants For The Event</h5>
+	<!-- CONTACT SECTION -->
+	<div class="container-fluid contact" id="section4">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<h2 class="text-center contact-text">Contact</h2>
+					<div class="col-md-6 col-sm-12 col-xs-12contact-form">
+						<form role="form">
+							<div class="form-group">
+								<input type="text" class="form-control form-effect" id="name" placeholder="Name">
+							</div>
+							<div class="form-group">
+								<input type="email" class="form-control form-effect" id="email" placeholder="Email">
+							</div>
+							<div class="form-group">
+								<textarea type="textarea" class="form-control form-effect" id="text" placeholder="Message"></textarea>
+							</div>
+							<button type="submit" class="btn btn-default btn-sub">Submit</button>
+						</form>
+					</div>
+					<div class="col-md-6 col-sm-12 col-xs-12 address-space">
+						<div id="map-canvas"></div>
+						<div class="address">
+							<h3>Address</h3>
+							<p><i class="glyphicon glyphicon-map-marker"></i>The Church at South Edmonton,9910 67 ave NW,T6E 0P5 </p>
+							<p><i class="glyphicon glyphicon-envelope"></i>Info@example.com</p>
+						</div>
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
-</div>
-</div>
 
-<div class="container-fluid contact" id="section4">
-	<div class="container">
+
+	<!-- FOOTER SECTION -->
+	<div class="container-fluid footer">
 		<div class="row">
 			<div class="col-md-12">
-				<h2 class="text-center contact-text">Contact</h2>
-				<div class="col-md-6 col-sm-12 col-xs-12contact-form">
-					<form role="form">
-						<div class="form-group">
-							<input type="text" class="form-control form-effect" id="name" placeholder="Name">
-						</div>
-						<div class="form-group">
-							<input type="email" class="form-control form-effect" id="email" placeholder="Email">
-						</div>
-						<div class="form-group">
-							<textarea type="textarea" class="form-control form-effect" id="text" placeholder="Message"></textarea>
-						</div>
-						<button type="submit" class="btn btn-default btn-sub">Submit</button>
-					</form>
-				</div>
-				<div class="col-md-6 col-sm-12 col-xs-12 address-space">
-					<div id="map-canvas"></div>
-					<div class="address">
-						<h3>Address</h3>
-						<p><i class="glyphicon glyphicon-map-marker"></i>The Church at South Edmonton,9910 67 ave NW,T6E 0P5 </p>
-						<p><i class="glyphicon glyphicon-envelope"></i>Info@example.com</p>
-					</div>
-				</div>
+				<p>Built from Ravalic 2015 template provided by <a href="http://www.html5layouts.com">HTML5 Layouts</a></p>
 			</div>
 		</div>
 	</div>
-</div>
 
 
-
-<div class="container-fluid footer">
-	<div class="row">
-		<div class="col-md-12">
-			<p>Built from Ravalic 2015 template provided by <a href="http://www.html5layouts.com">HTML5 Layouts</a></p>
-		</div>
-	</div>
-</div>
-
-<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-<!-- Include all compiled plugins (below), or include individual files as needed -->
-<script src="js/bootstrap.min.js"></script>
-<script type="text/javascript" src="js/jquery.countTo.js"></script>
-<script type="text/javascript" src="js/jquery.waypoints.min.js"></script>
-<script src="https://maps.googleapis.com/maps/api/js"></script>
-<script src="js/lightbox.min.js"></script>
-<script>
-function initialize() {
-	var mapCanvas = document.getElementById('map-canvas');
-	var mapOptions = {
-		center: new google.maps.LatLng(53.503698, -113.487486),
-		zoom: 12,
-		mapTypeId: google.maps.MapTypeId.ROADMAP
+<!-- ******************************* SCRIPTS ******************************* -->
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<!-- Include all compiled plugins (below), or include individual files as needed -->
+	<script src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/jquery.countTo.js"></script>
+	<script type="text/javascript" src="js/jquery.waypoints.min.js"></script>
+	<script src="https://maps.googleapis.com/maps/api/js"></script>
+	<script src="js/lightbox.min.js"></script>
+	<script>
+	function initialize() {
+		var mapCanvas = document.getElementById('map-canvas');
+		var mapOptions = {
+			center: new google.maps.LatLng(53.503698, -113.487486),
+			zoom: 12,
+			mapTypeId: google.maps.MapTypeId.ROADMAP
+		}
+		var map = new google.maps.Map(mapCanvas, mapOptions)
 	}
-	var map = new google.maps.Map(mapCanvas, mapOptions)
-}
-google.maps.event.addDomListener(window, 'load', initialize);
-</script>
-<script>
-$(document).ready(function () {
+	google.maps.event.addDomListener(window, 'load', initialize);
+	</script>
+	<script>
+	$(document).ready(function () {
 
-	/* initialize photo thumbnails, and set default photo and caption to 001 */
-	var photoarray = "";
-	/* TODO: determine this 18 by examining files in images/ */
-	for (i = 1; i <= 18; i++) {
-		var id = "";
-		if (i >= 1 && i <= 9) {
-			id = "00" + i;
-		}
-		else if (i >= 10 && i <= 99) {
-			id = "0" + i;
-		}
-		else {
-			id = id + i;
-		}
-		photoarray = photoarray + "<div class=\"thumbnail\"><img src=\"images/image" + id + ".jpg\" /></div>";
-	}
-	$('#photos-thumbnails').html(photoarray);
-	updateImage("001");
+		initializePhotos();
 
-	$(document).on("scroll", onScroll);
+		$(document).on("scroll", onScroll);
 
-	/* perform scrolling when nav link is clicked */
-	$('a[href^="#"]').on('click', function (e) {
-		e.preventDefault();
-		$(document).off("scroll");
+		/* perform scrolling when nav link is clicked */
+		$('a[href^="#"]').on('click', function (e) {
+			e.preventDefault();
+			$(document).off("scroll");
 
-		$('a').each(function () {
-			$(this).removeClass('active');
-		})
-		$(this).addClass('active');
+			$('a').each(function () {
+				$(this).removeClass('active');
+			})
+			$(this).addClass('active');
 
-		var target = this.hash;
-		$target = $(target);
-		$('html, body').stop().animate({
-			'scrollTop': $target.offset().top
-		}, 500, 'swing', function () {
-			window.location.hash = target;
-			$(document).on("scroll", onScroll);
+			var target = this.hash;
+			$target = $(target);
+			$('html, body').stop().animate({
+				'scrollTop': $target.offset().top
+			}, 500, 'swing', function () {
+				window.location.hash = target;
+				$(document).on("scroll", onScroll);
+			});
 		});
+
+		/* handle mouseover of photos */
+		$('.thumbnail').mouseenter(
+			function() {
+
+				var imageHTML = $(this).html();
+				var imageId = imageHTML.substr(22,3);
+
+				updateImage(imageId);
+
+				$(this).css("border","1px solid red");
+			}
+		);
+
+		$('.thumbnail').mouseleave(
+			function() {
+				$(this).css("border","1px solid #ddd");
+			}
+		);
+
 	});
 
+	/* perform updating of which nav link is selected based on where the screen is scrolled to */
+	function onScroll(event){
+		var scrollPosition = $(document).scrollTop();
+		$('nav a').each(function () {
+			var currentLink = $(this);
+			var refElement = $(currentLink.attr("href"));
+			if (refElement.position().top <= scrollPosition && refElement.position().top + refElement.height() > scrollPosition) {
+				$('nav ul li a').removeClass("active");
+				currentLink.addClass("active");
+			}
+			else{
+				currentLink.removeClass("active");
+			}
+		});
+	}
 
+	/* initialize photo thumbnails, main photo, and main caption */
+	function initializePhotos() {
 
-	/* handle mouseover of photos */
-	$('.thumbnail').mouseenter(
-		function() {
-
-			var imageHTML = $(this).html();
-			var imageId = imageHTML.substr(22,3);
-
-			updateImage(imageId);
-
-			$(this).css("border","1px solid red");
+		var n = numCaptions();
+		var photoarray = "";
+		for (i = 1; i <= n; i++) {
+			var id = "";
+			if (i >= 1 && i <= 9) {
+				id = "00" + i;
+			}
+			else if (i >= 10 && i <= 99) {
+				id = "0" + i;
+			}
+			else {
+				id = id + i;
+			}
+			photoarray = photoarray + "<div class=\"thumbnail\"><img src=\"images/image" + id + ".jpg\" /></div>";
 		}
-	);
+		$('#photos-thumbnails').html(photoarray);
+		updateImage("001");
+	}
 
-	$('.thumbnail').mouseleave(
-		function() {
-			$(this).css("border","1px solid #ddd");
-		}
-	);
-
-	function updateImage(id) {
+	/* return number of images present - NOT COMPLETE */
+	function numCaptions() {
 		var xmlreq = new XMLHttpRequest();
+		var result;
 		xmlreq.onreadystatechange = function() {
 			if (xmlreq.readyState == 4 && xmlreq.status == 200) {
 				var xmldoc = xmlreq.responseXML;
-				var caption = xmldoc.getElementsByTagName("_" + id);
-				$('#photos-maincaption').html("<h3>" + caption[0].childNodes[0].nodeValue + "</h3>");
+				var captions = xmldoc.getElementsByTagName("caption");
+				result = captions.length;
 			}
 		};
 		xmlreq.open("GET", "captions.xml", true);
 		xmlreq.send();
 
-		$('#photos-mainimage').html("<img src=\"images/image" + id + ".jpg\" />");
+		return 18; // TEMPORARY
 	}
-});
 
-/* perform updating of which nav link is selected based on where the screen is scrolled to */
-function onScroll(event){
-	var scrollPosition = $(document).scrollTop();
-	$('nav a').each(function () {
-		var currentLink = $(this);
-		var refElement = $(currentLink.attr("href"));
-		if (refElement.position().top <= scrollPosition && refElement.position().top + refElement.height() > scrollPosition) {
-			$('nav ul li a').removeClass("active");
-			currentLink.addClass("active");
-		}
-		else{
-			currentLink.removeClass("active");
-		}
-	});
-}
-</script>
-<script type="text/javascript">
-jQuery(function ($) {
-	// custom formatting example
-	$('.timer').data('countToOptions', {
-		formatter: function (value, options) {
-			return value.toFixed(options.decimals).replace(/\B(?=(?:\d{3})+(?!\d))/g, ',');
-		}
-	});
+	/* update the main image and the caption */
+	function updateImage(id) {
+		var xmlreq = new XMLHttpRequest();
+		xmlreq.onreadystatechange = function() {
+			if (xmlreq.readyState == 4 && xmlreq.status == 200) {
+				var xmldoc = xmlreq.responseXML;
+				var captions = xmldoc.getElementsByTagName("caption");
+				for (i = 0; i < captions.length; i++) {
+					if (captions[i].getAttribute('id') == id) {
+						$('#photos-maincaption').html("<h3>" + captions[i].childNodes[0].nodeValue + "</h3>");
+					}
+				}
+			}
+		};
+		xmlreq.open("GET", "captions.xml", true);
+		xmlreq.send();
 
-	// start all the timers
-	$('#starts').waypoint(function() {
-		$('.timer').each(count);
-	});
-
-	function count(options) {
-		var $this = $(this);
-		options = $.extend({}, options || {}, $this.data('countToOptions') || {});
-		$this.countTo(options);
+		$('#photos-mainimage').hide().html("<img src=\"images/image" + id + ".jpg\" />").fadeIn(200);
 	}
-});
-</script>
+
+	</script>
+	<script type="text/javascript">
+	jQuery(function ($) {
+		// custom formatting example
+		$('.timer').data('countToOptions', {
+			formatter: function (value, options) {
+				return value.toFixed(options.decimals).replace(/\B(?=(?:\d{3})+(?!\d))/g, ',');
+			}
+		});
+
+		// start all the timers
+		$('#starts').waypoint(function() {
+			$('.timer').each(count);
+		});
+
+		function count(options) {
+			var $this = $(this);
+			options = $.extend({}, options || {}, $this.data('countToOptions') || {});
+			$this.countTo(options);
+		}
+	});
+	</script>
 </body>
 </html>
