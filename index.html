@@ -1,9 +1,9 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Jarrett's Tournament 4</title>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Jarrett's Tournament 4</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 	<link href="css/bootstrap.css" rel="stylesheet">
 	<link rel="stylesheet" href="style.css" type="text/css">
@@ -11,139 +11,200 @@
 	<link href='http://fonts.googleapis.com/css?family=Poppins:400,600,700,500,300' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Roboto:400,900italic,900,700italic,700,400italic,500,500italic,300,100italic,100,300italic' rel='stylesheet' type='text/css'>
 
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if lt IE 9]>
+	<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+	<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	<![endif]-->
 
+	<style>
+	/*.container-fluid {
+	border: 3px solid red;
+}
+.container {
+border: 2px solid magenta;
+}
+#photos-thumbnails {
+border: 3px solid green;
+}
+.photos-display {
+border: 3px solid blue;
+}
+.photos-text {
+border: 2px solid magenta;
+}*/
+.photos
+{
+	background: #ff9933;
+	padding: 0px 0px;
+}
+.thumbnail {
+	position: relative;
+	float: left;
+	width: 33.333333%;
+}
+.thumbnail img {
+	max-height: 60px; /* 60 for 3-wide, 91 for 2-wide - probably don't need this if we just ensure all pictures have the same aspect ratio */
+}
+#photos-maincaption h3 {
+	text-align: center;
+	padding: 30px 0px 10px 0px;
+	font-size: 15px;
+	float: left;
+	width: 100%;
+	font-weight: 600;
+	background: #f93;
+	color:#000;
+	margin:0px;
+	font-family: 'Roboto', sans-serif;
+	height: 100px;
+}
+#photos-mainimage img {
+	position: relative;
+	float: left;
+	width: 100%;
+	height: auto;
+}
 
+</style>
 </head>
 <body>
-<header class="header">
-	<div class="container">
-		<div class="row">
-			<div class="col-md-4 ">
-				<div class="navbar-header">
-					    <button type="button" class="navbar-toggle menu-button" data-toggle="collapse" data-target="#myNavbar">
-					        <span class="glyphicon glyphicon-align-justify"></span>
-					    </button>
-      					<a class="navbar-brand logo" href="#">Super Smash Bros University</a>
-    			</div>
-			</div>
-			<div class="col-md-8">
-				<nav class="collapse navbar-collapse" id="myNavbar" role="navigation">
-					<ul class="nav navbar-nav navbar-right menu">
+	<header class="header">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-4 ">
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle menu-button" data-toggle="collapse" data-target="#myNavbar">
+							<span class="glyphicon glyphicon-align-justify"></span>
+						</button>
+						<a class="navbar-brand logo" href="#">Super Smash Bros University</a>
+					</div>
+				</div>
+				<div class="col-md-8">
+					<nav class="collapse navbar-collapse" id="myNavbar" role="navigation">
+						<ul class="nav navbar-nav navbar-right menu">
 							<li><a href="#page-top" class="page-scroll active">About</a></li>
 							<li><a href="#section2" class="page-scroll">Photos</a></li>
 							<li><a href="#section3" class="page-scroll">Donate</a></li>
 							<li><a href="#section4" class="page-scroll">Contact</a></li>
-					</ul>
-				</nav>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<div class="container-fluid main" id="page-top">
+		<div class="row">
+			<div class="col-md-12 backg">
+				<div class="col-md-4 col-md-offset-4 inner col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-3">
+					<div class="text-box">
+						<p class="intro">SSBU Presents</p>
+						<h2>Jarrett's Tournament 4</h2>
+						<h3>A Super Smash Bros Melee Charity Event</h3>
+						<!-- <p>By <span><a href="http://www.html5layouts.com">HTML5 Layouts</a></span></p>
+						<p><a href="#" class="link-button">Tell Me Something</a></p> -->
+					</div>
+				</div>
+			</div>
+			<div class="col-md-12 some-notes">
+				<div class="title">
+					<h2>Welcome To Ravalic</h2>
+				</div>
+				<div class="desc">
+					<p>Super Smash Bros University [SSBU] welcomes everyone to come to our fundraiser Smash Bros tournament for the Autism Society of Edmonton Area in memory of Jarrett "Solaris" Bortscher.</p>
+				</div>
 			</div>
 		</div>
 	</div>
-</header>
 
-<div class="container-fluid main" id="page-top">
-	<div class="row">
-		<div class="col-md-12 backg">
-			<div class="col-md-4 col-md-offset-4 inner col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-3">
-				<div class="text-box">
-                	<p class="intro">SSBU Presents</p>
-                    <h2>Jarrett's Tournament 4</h2>
-                    <h3>A Super Smash Bros Melee Charity Event</h3>
-                    <!-- <p>By <span><a href="http://www.html5layouts.com">HTML5 Layouts</a></span></p>
-                    <p><a href="#" class="link-button">Tell Me Something</a></p> -->
+	<div class="container-fluid photos" id="section2">
+		<div class="container">
+			<div class="row" id="starts">
+				<div class="col-md-12 col-sm-12 col-xs-12 photos-list">
+					<h2 class="text-center photos-text">Photos</h2>
+
+					<div class="col-md-12 col-sm-12 col-xs-12">
+						<div class="col-md-4 col-sm-4 col-xs-4">
+						</div>
+						<div class="col-md-8 col-sm-8 col-xs-8">
+							<div id="photos-maincaption">
+								<h3><i>Loading caption...</i></h3>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-12 col-sm-12 col-xs-12">
+						<div class="col-md-4 col-sm-4 col-xs-4" id="photos-thumbnails">
+							<!--		<div class="thumbnail">
+							<img src="images/image001.jpg" />
+						</div>
+						<div class="thumbnail">
+						<img src="images/image002.jpg" />
+					</div>
+					<div class="thumbnail">
+					<img src="images/image003.jpg" />
 				</div>
-  			</div>
+				<div class="thumbnail">
+				<img src="images/image004.jpg" />
+			</div>
+			<div class="thumbnail">
+			<img src="images/image005.jpg" />
 		</div>
-		<div class="col-md-12 some-notes">
-			<div class="title">
-                <h2>Welcome To Ravalic</h2>
-            </div>
-            <div class="desc">
-                <p>Super Smash Bros University [SSBU] welcomes everyone to come to our fundraiser Smash Bros tournament for the Autism Society of Edmonton Area in memory of Jarrett "Solaris" Bortscher.</p>
-            </div>
-		</div>
+		<div class="thumbnail">
+		<img src="images/image006.jpg" />
 	</div>
+	<div class="thumbnail">
+	<img src="images/image007.jpg" />
+</div>
+<div class="thumbnail">
+<img src="images/image008.jpg" />
+</div>
+<div class="thumbnail">
+<img src="images/image009.jpg" />
+</div>
+<div class="thumbnail">
+<img src="images/image010.jpg" />
+</div>
+<div class="thumbnail">
+<img src="images/image011.jpg" />
+</div>
+<div class="thumbnail">
+<img src="images/image012.jpg" />
+</div>
+<div class="thumbnail">
+<img src="images/image013.jpg" />
+</div>
+<div class="thumbnail">
+<img src="images/image014.jpg" />
+</div>
+<div class="thumbnail">
+<img src="images/image015.jpg" />
+</div>
+<div class="thumbnail">
+<img src="images/image016.jpg" />
+</div>
+<div class="thumbnail">
+<img src="images/image017.jpg" />
+</div>
+<div class="thumbnail">
+<img src="images/image018.jpg" />
+</div> -->
 </div>
 
-<div class="container-fluid photos" id="section2">
-	<div class="container">
-		<div class="row" id="starts">
-			<div class="col-md-12 col-sm-12 col-xs-12 work-list">
-				<h2 class="text-center photos-text">Photos</h2>
-				<div class="col-md-4 col-sm-6 col-xs-12 work-space">
-					<a href="images/story1.png" data-lightbox="image-1">
-                		<div class="featured-img">
-                			<img src="images/story1.png"/>
-                		</div>
-                		<div class="image-hover">
-                			<i class="glyphicon glyphicon-eye-open"></i>
-						 </div>
-                		<h3>Amazing Beauty</h3>
-                	</a>
-				</div>
-				<div class="col-md-4 col-sm-6 col-xs-12 work-space">
-					<a href="images/story2.png" data-lightbox="image-1">
-                		<div class="featured-img">
-                			<img src="images/story2.png"/>
-                		</div>
-                		<div class="image-hover">
-                			<i class="glyphicon glyphicon-eye-open"></i>
-						 </div>
-                		<h3>Mind Blowing</h3>
-                	</a>
-				</div>
-				<div class="col-md-4 col-sm-6 col-xs-12 work-space">
-					<a href="images/story3.png" data-lightbox="image-1">
-                		<div class="featured-img">
-                			<img src="images/story3.png"/>
-                		</div>
-                		<div class="image-hover">
-                			<i class="glyphicon glyphicon-eye-open"></i>
-						 </div>
-                		<h3>Perfect Shot</h3>
-                	</a>
-				</div>
-				<div class="col-md-4 col-sm-6 col-xs-12 work-space">
-					<a href="images/story2.png" data-lightbox="image-1">
-                		<div class="featured-img">
-                			<img src="images/story2.png"/>
-                		</div>
-                		<div class="image-hover">
-                			<i class="glyphicon glyphicon-eye-open"></i>
-						 </div>
-                		<h3>Creative thoughts</h3>
-                	</a>
-				</div>
-				<div class="col-md-4 col-sm-6 col-xs-12 work-space">
-					<a href="images/story3.png" data-lightbox="image-1">
-                		<div class="featured-img">
-                			<img src="images/story3.png"/>
-                		</div>
-                		<div class="image-hover">
-                			<i class="glyphicon glyphicon-eye-open"></i>
-						 </div>
-                		<h3>Beautiful Picture</h3>
-                	</a>
-				</div>
-				<div class="col-md-4 col-sm-6 col-xs-12 work-space">
-					<a href="images/story1.png" data-lightbox="image-1">
-                		<div class="featured-img">
-                			<img src="images/story1.png"/>
-                		</div>
-                		<div class="image-hover">
-                			<i class="glyphicon glyphicon-eye-open"></i>
-						 </div>
-                		<h3>heart Touching</h3>
-                	</a>
-				</div>
-			</div>
-		</div>
+
+<div class="col-md-8 col-sm-8 col-xs-8 photos-display">
+	<div id="photos-mainimage">
+		<img src="images/image001.jpg" />
 	</div>
+</div>
+</div>
+
+
+</div>
+</div>
+</div>
 </div>
 
 <div class="container-fluid donate" id="section3">
@@ -158,8 +219,8 @@
 						</div>
 					</div>
 					<div class="col-md-9 col-md-offset-1 col-sm-10 col-xs-12 icon-text-box">
-                    	<h4>Modern Design</h4>
-                    	<p>Lorem ipsum dolor sit amet, consectetur elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+						<h4>Modern Design</h4>
+						<p>Lorem ipsum dolor sit amet, consectetur elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
 					</div>
 				</div>
 				<div class="col-md-6 col-sm-12 col-xs-12 icon-box">
@@ -169,8 +230,8 @@
 						</div>
 					</div>
 					<div class="col-md-9 col-md-offset-1 col-sm-10 col-xs-12 icon-text-box">
-                    	<h4>Easy To Customize</h4>
-                    	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+						<h4>Easy To Customize</h4>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
 					</div>
 				</div>
 				<div class="col-md-6 col-sm-12 col-xs-12 icon-box">
@@ -180,8 +241,8 @@
 						</div>
 					</div>
 					<div class="col-md-9 col-md-offset-1 col-sm-10 col-xs-12 icon-text-box">
-                    	<h4>Save Time</h4>
-                    	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, adipiscing elit.</p>
+						<h4>Save Time</h4>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, adipiscing elit.</p>
 					</div>
 				</div>
 				<div class="col-md-6 col-sm-12 col-xs-12 icon-box">
@@ -191,8 +252,8 @@
 						</div>
 					</div>
 					<div class="col-md-9 col-md-offset-1 col-sm-10 col-xs-12 icon-text-box">
-                    	<h4>Professional Work</h4>
-                    	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit consectetur adipiscing elit.</p>
+						<h4>Professional Work</h4>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit consectetur adipiscing elit.</p>
 					</div>
 				</div>
 				<div class="col-md-6 col-sm-12 col-xs-12 icon-box">
@@ -202,8 +263,8 @@
 						</div>
 					</div>
 					<div class="col-md-9 col-md-offset-1 col-sm-10 col-xs-12 icon-text-box">
-                    	<h4>User-friendly Interface</h4>
-                    	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit consectetur adipiscing elit.</p>
+						<h4>User-friendly Interface</h4>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit consectetur adipiscing elit.</p>
 					</div>
 				</div>
 				<div class="col-md-6 col-sm-12 col-xs-12 icon-box">
@@ -213,8 +274,8 @@
 						</div>
 					</div>
 					<div class="col-md-9 col-md-offset-1 col-sm-10 col-xs-12 icon-text-box">
-                    	<h4>Made With Love</h4>
-                    	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing.</p>
+						<h4>Made With Love</h4>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing.</p>
 					</div>
 				</div>
 			</div>
@@ -231,15 +292,15 @@
 
 <div class="container-fluid countspace">
 	<div class="container">
-	<div class="row">
-		<div class="col-md-12 countbg">
-			<div class="col-xs-12 col-sm-3 col-md-6">
-                <div class="counter-item">
-                    <i class="glyphicon glyphicon-user"></i>
-                    <div class="timer" data-from="0" data-to="100" data-speed="5000" data-refresh-interval="50"></div>
-                    <h5>Entrants For The Event</h5>
-                </div>
-            </div>
+		<div class="row">
+			<div class="col-md-12 countbg">
+				<div class="col-xs-12 col-sm-3 col-md-6">
+					<div class="counter-item">
+						<i class="glyphicon glyphicon-user"></i>
+						<div class="timer" data-from="0" data-to="100" data-speed="5000" data-refresh-interval="50"></div>
+						<h5>Entrants For The Event</h5>
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>
@@ -253,17 +314,17 @@
 				<h2 class="text-center contact-text">Contact</h2>
 				<div class="col-md-6 col-sm-12 col-xs-12contact-form">
 					<form role="form">
-                        <div class="form-group">
-                            <input type="text" class="form-control form-effect" id="name" placeholder="Name">
-                        </div>
-                        <div class="form-group">
-                            <input type="email" class="form-control form-effect" id="email" placeholder="Email">
-                        </div>
-                        <div class="form-group">
-                            <textarea type="textarea" class="form-control form-effect" id="text" placeholder="Message"></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-default btn-sub">Submit</button>
-                    </form>
+						<div class="form-group">
+							<input type="text" class="form-control form-effect" id="name" placeholder="Name">
+						</div>
+						<div class="form-group">
+							<input type="email" class="form-control form-effect" id="email" placeholder="Email">
+						</div>
+						<div class="form-group">
+							<textarea type="textarea" class="form-control form-effect" id="text" placeholder="Message"></textarea>
+						</div>
+						<button type="submit" class="btn btn-default btn-sub">Submit</button>
+					</form>
 				</div>
 				<div class="col-md-6 col-sm-12 col-xs-12 address-space">
 					<div id="map-canvas"></div>
@@ -288,85 +349,143 @@
 	</div>
 </div>
 
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="js/jquery.countTo.js"></script>
-    <script type="text/javascript" src="js/jquery.waypoints.min.js"></script>
-    <script src="https://maps.googleapis.com/maps/api/js"></script>
-    <script src="js/lightbox.min.js"></script>
-    <script>
-      function initialize() {
-        var mapCanvas = document.getElementById('map-canvas');
-        var mapOptions = {
-          center: new google.maps.LatLng(53.503698, -113.487486),
-          zoom: 12,
-          mapTypeId: google.maps.MapTypeId.ROADMAP
-        }
-        var map = new google.maps.Map(mapCanvas, mapOptions)
-      }
-      google.maps.event.addDomListener(window, 'load', initialize);
-    </script>
-    <script>
-	$(document).ready(function () {
-		$(document).on("scroll", onScroll);
-
-		$('a[href^="#"]').on('click', function (e) {
-			e.preventDefault();
-			$(document).off("scroll");
-
-			$('a').each(function () {
-				$(this).removeClass('active');
-			})
-			$(this).addClass('active');
-
-			var target = this.hash;
-			$target = $(target);
-			$('html, body').stop().animate({
-				'scrollTop': $target.offset().top
-			}, 500, 'swing', function () {
-				window.location.hash = target;
-				$(document).on("scroll", onScroll);
-			});
-		});
-	});
-
-	function onScroll(event){
-		var scrollPosition = $(document).scrollTop();
-		$('nav a').each(function () {
-			var currentLink = $(this);
-			var refElement = $(currentLink.attr("href"));
-			if (refElement.position().top <= scrollPosition && refElement.position().top + refElement.height() > scrollPosition) {
-				$('nav ul li a').removeClass("active");
-				currentLink.addClass("active");
-			}
-			else{
-				currentLink.removeClass("active");
-			}
-		});
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/jquery.countTo.js"></script>
+<script type="text/javascript" src="js/jquery.waypoints.min.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js"></script>
+<script src="js/lightbox.min.js"></script>
+<script>
+function initialize() {
+	var mapCanvas = document.getElementById('map-canvas');
+	var mapOptions = {
+		center: new google.maps.LatLng(53.503698, -113.487486),
+		zoom: 12,
+		mapTypeId: google.maps.MapTypeId.ROADMAP
 	}
-	</script>
-	<script type="text/javascript">
-    jQuery(function ($) {
-      // custom formatting example
-      $('.timer').data('countToOptions', {
-        formatter: function (value, options) {
-          return value.toFixed(options.decimals).replace(/\B(?=(?:\d{3})+(?!\d))/g, ',');
-        }
-      });
+	var map = new google.maps.Map(mapCanvas, mapOptions)
+}
+google.maps.event.addDomListener(window, 'load', initialize);
+</script>
+<script>
+$(document).ready(function () {
 
-      // start all the timers
-      $('#starts').waypoint(function() {
-    $('.timer').each(count);
+	/* initialize photo thumbnails, and set default photo and caption to 001 */
+	var photoarray = "";
+	/* TODO: determine this 18 by examining files in images/ */
+	for (i = 1; i <= 18; i++) {
+		var id = "";
+		if (i >= 1 && i <= 9) {
+			id = "00" + i;
+		}
+		else if (i >= 10 && i <= 99) {
+			id = "0" + i;
+		}
+		else {
+			id = id + i;
+		}
+		photoarray = photoarray + "<div class=\"thumbnail\"><img src=\"images/image" + id + ".jpg\" /></div>";
+	}
+	$('#photos-thumbnails').html(photoarray);
+	updateImage("001");
+
+	$(document).on("scroll", onScroll);
+
+	/* perform scrolling when nav link is clicked */
+	$('a[href^="#"]').on('click', function (e) {
+		e.preventDefault();
+		$(document).off("scroll");
+
+		$('a').each(function () {
+			$(this).removeClass('active');
+		})
+		$(this).addClass('active');
+
+		var target = this.hash;
+		$target = $(target);
+		$('html, body').stop().animate({
+			'scrollTop': $target.offset().top
+		}, 500, 'swing', function () {
+			window.location.hash = target;
+			$(document).on("scroll", onScroll);
+		});
 	});
 
-      function count(options) {
-        var $this = $(this);
-        options = $.extend({}, options || {}, $this.data('countToOptions') || {});
-        $this.countTo(options);
-      }
-    });
-  	</script>
+
+
+	/* handle mouseover of photos */
+	$('.thumbnail').mouseenter(
+		function() {
+
+			var imageHTML = $(this).html();
+			var imageId = imageHTML.substr(22,3);
+
+			updateImage(imageId);
+
+			$(this).css("border","1px solid red");
+		}
+	);
+
+	$('.thumbnail').mouseleave(
+		function() {
+			$(this).css("border","1px solid #ddd");
+		}
+	);
+
+	function updateImage(id) {
+		var xmlreq = new XMLHttpRequest();
+		xmlreq.onreadystatechange = function() {
+			if (xmlreq.readyState == 4 && xmlreq.status == 200) {
+				var xmldoc = xmlreq.responseXML;
+				var caption = xmldoc.getElementsByTagName("_" + id);
+				$('#photos-maincaption').html("<h3>" + caption[0].childNodes[0].nodeValue + "</h3>");
+			}
+		};
+		xmlreq.open("GET", "captions.xml", true);
+		xmlreq.send();
+
+		$('#photos-mainimage').html("<img src=\"images/image" + id + ".jpg\" />");
+	}
+});
+
+/* perform updating of which nav link is selected based on where the screen is scrolled to */
+function onScroll(event){
+	var scrollPosition = $(document).scrollTop();
+	$('nav a').each(function () {
+		var currentLink = $(this);
+		var refElement = $(currentLink.attr("href"));
+		if (refElement.position().top <= scrollPosition && refElement.position().top + refElement.height() > scrollPosition) {
+			$('nav ul li a').removeClass("active");
+			currentLink.addClass("active");
+		}
+		else{
+			currentLink.removeClass("active");
+		}
+	});
+}
+</script>
+<script type="text/javascript">
+jQuery(function ($) {
+	// custom formatting example
+	$('.timer').data('countToOptions', {
+		formatter: function (value, options) {
+			return value.toFixed(options.decimals).replace(/\B(?=(?:\d{3})+(?!\d))/g, ',');
+		}
+	});
+
+	// start all the timers
+	$('#starts').waypoint(function() {
+		$('.timer').each(count);
+	});
+
+	function count(options) {
+		var $this = $(this);
+		options = $.extend({}, options || {}, $this.data('countToOptions') || {});
+		$this.countTo(options);
+	}
+});
+</script>
 </body>
 </html>
