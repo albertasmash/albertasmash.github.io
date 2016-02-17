@@ -156,7 +156,7 @@
 {
 	background: rgba(255, 255, 255, 0.3);
 }
-.about
+.info
 {
 	padding: 40px 60px;
 	float: left;
@@ -186,12 +186,12 @@
 	text-decoration: none;
 	color: #8ab839;
 }
-.donate
+.register
 {
 	background: #8ab839;
 	padding: 60px 0px;
 }
-.donate-text
+.register-text
 {
 	font-family: 'Roboto', sans-serif;
 	font-weight: 700;
@@ -199,7 +199,7 @@
 	margin-bottom:30px;
 	margin-top:30px;
 }
-h2.donate-text::after {
+h2.register-text::after {
     display: block;
     margin: 17px auto 0px;
     width: 80px;

@@ -83,7 +83,7 @@ border: 2px solid magenta;
 	height: auto;
 }
 
-.about-text
+.info-text
 {
 	font-family: 'Roboto', sans-serif;
 	font-weight: 700;
@@ -91,7 +91,7 @@ border: 2px solid magenta;
 	margin-bottom:30px;
 	margin-top:30px;
 }
-h2.about-text::after {
+h2.info-text::after {
     display: block;
     margin: 17px auto 0px;
     width: 80px;
@@ -127,7 +127,27 @@ h2.about-text::after {
 	font-family: 'Poppins', sans-serif;
 	font-size: 14px;
 }
-
+.history
+{
+	background: #f39;
+	padding: 60px 0px;
+}
+.history-text
+{
+	font-family: 'Roboto', sans-serif;
+	font-weight: 700;
+	letter-spacing: 5px;
+	margin-bottom:30px;
+	margin-top:30px;
+}
+h2.history-text::after {
+    display: block;
+    margin: 17px auto 0px;
+    width: 80px;
+    height: 1px;
+    background: #FFF none repeat scroll 0% 0%;
+    content: "";
+}
 
 </style>
 </head>
@@ -148,10 +168,11 @@ h2.about-text::after {
 				<div class="col-md-8">
 					<nav class="collapse navbar-collapse" id="myNavbar" role="navigation">
 						<ul class="nav navbar-nav navbar-right menu">
-							<li><a href="#page-top" class="page-scroll active">About</a></li>
-							<li><a href="#section2" class="page-scroll">Photos</a></li>
-							<li><a href="#section3" class="page-scroll">Donate</a></li>
-							<li><a href="#section4" class="page-scroll">Contact</a></li>
+							<li><a href="#page-top" class="page-scroll active">Event Info</a></li>
+							<li><a href="#section2" class="page-scroll">Register/Donate</a></li>
+							<li><a href="#section3" class="page-scroll">History</a></li>
+							<li><a href="#section4" class="page-scroll">Photos</a></li>
+							<li><a href="#section5" class="page-scroll">Contact</a></li>
 						</ul>
 					</nav>
 				</div>
@@ -159,7 +180,7 @@ h2.about-text::after {
 		</div>
 	</header>
 
-	<!-- MAIN SECTION -->
+	<!-- EVENT INFO SECTION -->
 	<div class="container-fluid main" id="page-top">
 		<div class="row">
 			<div class="col-md-12 backg">
@@ -173,64 +194,70 @@ h2.about-text::after {
 					</div>
 				</div>
 			</div>
-			<div class="col-md-12 col-sm-12 col-xs-12 about">
-				<h2 class="text-center about-text">About</h2>
-				<div class="col-md-6 col-sm-12 col-xs-12 desc">
+			<div class="col-md-12 col-sm-12 col-xs-12 info desc">
+				<h2 class="text-center info-text">Event Info</h2>
 					<p>Super Smash Bros University [SSBU] welcomes everyone to come to our fundraiser Smash Bros tournament for the Autism Society of Edmonton Area in memory of Jarrett "Solaris" Bortscher.</p>
 						<ul>
-							<li><h4>When:</h4> March 12, 2016
-							<li><h4>Where:</h4> The Church at South Edmonton - 9910 67 Ave NW, T6E 0P5
-							<li><h4>Game:</h4> Super Smash Bros. Melee
+							<li><h4>Date:</h4> March 12, 2016</li>
+							<li><h4>Time:</h4> 10:00 AM</li>
+							<li><h4>Location:</h4> The Church at South Edmonton - 9910 67 Ave NW, T6E 0P5</li>
+							<li><h4>Game:</h4> Super Smash Bros. Melee</li>
 						</ul>
-					<p>Super Smash Bros University [SSBU] welcomes everyone to come to our fundraiser Smash Bros tournament for the Autism Society of Edmonton Area in memory of Jarrett "Solaris" Bortscher.</p>
-					<div class="col-md-6 col-sm-6 col-xs-12 value">
-						<div class="counter-item">
-							<i class="glyphicon glyphicon-usd"></i>
-							<!-- TODO: determine whether we want the count up effect-->
-							<h1 class="counter-text">4,000</h1>
-							<h5>Raised from prior events</h5>
-						</div>
-					</div>
-					<div class="col-md-6 col-sm-6 col-xs-12 value">
-						<div class="counter-item">
-							<i class="glyphicon glyphicon-user"></i>
-							<!-- TODO: determine whether we want the count up effect, dynamically pull this from Facebook?-->
-							<h1 class="counter-text">120</h1>
-							<h5>Expected entrants for JT4</h5>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-6 col-sm-12 col-xs-12 twitchplayer">
-					<iframe src="http://player.twitch.tv/?channel=firedragon764&!muted&!autoplay" allowfullscreen></iframe>
-				</div>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet,
+						consectetur adipiscing elit.  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet,
+						consectetur adipiscing elit.</p>
+
 			</div>
 		</div>
 	</div>
 
-	<!-- PHOTOS SECTION -->
-	<div class="container-fluid photos" id="section2">
+	<!-- REGISTER/DONATE SECTION -->
+	<div class="container-fluid register" id="section2">
 		<div class="container">
 			<div class="row" id="starts">
-				<div class="col-md-12 col-sm-12 col-xs-12 photos-list">
-					<h2 class="text-center photos-text">Photos</h2>
-
-					<div class="col-md-12 col-sm-12 col-xs-12">
-						<div class="col-md-offset-4 col-sm-offset-4 col-xs-offset-4 col-md-8 col-sm-8 col-xs-8">
-							<div id="photos-maincaption">
-								<h3><i>Loading caption...</i></h3>
+				<div class="col-md-12">
+					<!-- TODO: decide on title for this section -->
+					<h2 class="text-center register-text">Register / Donate</h2>
+					<div class="col-md-4 col-sm-12 col-xs-12 icon-box">
+						<div class="col-md-2 col-sm-2 col-xs-12">
+							<div class="iconing">
+								<i class="glyphicon glyphicon-pencil"></i>
 							</div>
+						</div>
+						<div class="col-md-8 col-md-offset-2 col-sm-offset-1 col-sm-9 col-xs-12 icon-text-box">
+							<h4>Facebook</h4>
+							<p>Join our Facebook event for up-to-date news and information.</p>
 						</div>
 					</div>
-
-					<div class="col-md-12 col-sm-12 col-xs-12">
-						<div class="col-md-4 col-sm-4 col-xs-4" id="photos-thumbnails">
-							<i>Loading thumbnails...</i>
-						</div>
-
-						<div class="col-md-8 col-sm-8 col-xs-8 photos-display">
-							<div id="photos-mainimage">
-								<i>Loading image...</i>
+					<div class="col-md-4 col-sm-12 col-xs-12 icon-box">
+						<div class="col-md-2 col-sm-2 col-xs-12">
+							<div class="iconing">
+								<i class="glyphicon glyphicon-cog"></i>
 							</div>
+						</div>
+						<div class="col-md-8 col-md-offset-2 col-sm-offset-1 col-sm-9 col-xs-12 icon-text-box">
+							<h4>smash.gg</h4>
+							<p>Follow JT4 on the popular tournament tracker.</p>
+						</div>
+					</div>
+					<div class="col-md-4 col-sm-12 col-xs-12 icon-box">
+						<div class="col-md-2 col-sm-2 col-xs-12">
+							<div class="iconing">
+								<i class="glyphicon glyphicon-time"></i>
+							</div>
+						</div>
+						<div class="col-md-8 col-md-offset-2 col-sm-offset-1 col-sm-9 col-xs-12 icon-text-box">
+							<h4>Donate via Paypal</h4>
+							<p>Want to contribute to the cause but can't make it in person?</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-12 countbg countspace">
+					<div class="col-xs-12 col-sm-12 col-md-12">
+						<div class="counter-item">
+							<i class="glyphicon glyphicon-user"></i>
+							<div class="timer" data-from="0" data-to="100" data-speed="5000" data-refresh-interval="50"></div>
+							<h5>Entrants For The Event</h5>
 						</div>
 					</div>
 				</div>
@@ -238,12 +265,14 @@ h2.about-text::after {
 		</div>
 	</div>
 
-	<!-- DONATION SECTION -->
-	<div class="container-fluid donate" id="section3">
+
+
+	<!-- HISTORY SECTION -->
+	<div class="container-fluid history" id="section3">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-12">
-					<h2 class="text-center donate-text">Donate</h2>
+					<h2 class="text-center history-text">History</h2>
 					<div class="col-md-6 col-sm-12 col-xs-12 icon-box">
 						<div class="col-md-2 col-sm-2 col-xs-12">
 							<div class="iconing">
@@ -316,26 +345,42 @@ h2.about-text::after {
 	</div>
 
 
-	<!-- COUNTER SECTION -->
-	<div class="container-fluid countspace">
+	<!-- PHOTOS SECTION -->
+	<div class="container-fluid photos" id="section4">
 		<div class="container">
 			<div class="row">
-				<div class="col-md-12 countbg">
-					<div class="col-xs-12 col-sm-12 col-md-12">
-						<div class="counter-item">
-							<i class="glyphicon glyphicon-user"></i>
-							<div class="timer" data-from="0" data-to="100" data-speed="5000" data-refresh-interval="50"></div>
-							<h5>Entrants For The Event</h5>
+				<div class="col-md-12 col-sm-12 col-xs-12 photos-list">
+					<h2 class="text-center photos-text">Photos</h2>
+
+					<div class="col-md-12 col-sm-12 col-xs-12">
+						<div class="col-md-4 col-sm-4 col-xs-4" id="photos-thumbnails">
+							<i>Loading thumbnails...</i>
+						</div>
+
+						<div class="col-md-8 col-sm-8 col-xs-8 photos-display">
+							<div id="photos-mainimage">
+								<i>Loading image...</i>
+							</div>
 						</div>
 					</div>
+
+					<div class="col-md-12 col-sm-12 col-xs-12">
+						<div class="col-md-offset-4 col-sm-offset-4 col-xs-offset-4 col-md-8 col-sm-8 col-xs-8">
+							<div id="photos-maincaption">
+								<h3><i>Loading caption...</i></h3>
+							</div>
+						</div>
+					</div>
+
 				</div>
 			</div>
 		</div>
 	</div>
 
 
+
 	<!-- CONTACT SECTION -->
-	<div class="container-fluid contact" id="section4">
+	<div class="container-fluid contact" id="section5">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-12">
