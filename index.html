@@ -52,7 +52,7 @@ border: 2px solid magenta;
 }
 .photos
 {
-	background: #ff9933;
+	background: #8ab839;
 	padding: 0px 0px;
 }
 .thumbnail {
@@ -70,7 +70,7 @@ border: 2px solid magenta;
 	float: left;
 	width: 100%;
 	font-weight: 600;
-	background: #f93;
+	background: #8ab839;
 	color:#000;
 	margin:0px;
 	font-family: 'Roboto', sans-serif;
@@ -129,7 +129,7 @@ h2.info-text::after {
 }
 .history
 {
-	background: #f39;
+	background: #ff9933;
 	padding: 60px 0px;
 }
 .history-text
@@ -145,7 +145,7 @@ h2.history-text::after {
     margin: 17px auto 0px;
     width: 80px;
     height: 1px;
-    background: #FFF none repeat scroll 0% 0%;
+    background: #000 none repeat scroll 0% 0%;
     content: "";
 }
 
@@ -154,12 +154,24 @@ h2.history-text::after {
   padding: 3px;
 	margin-bottom: 0px;
   line-height: 1.42857143;
-  background-color: #f93;
+  background-color: #8ab839;
   border: 1px solid #ddd;
   border-radius: 4px;
   -webkit-transition: border .2s ease-in-out;
   -o-transition: border .2s ease-in-out;
   transition: border .2s ease-in-out;
+}
+
+.main {
+	background: #9fce26;
+}
+
+.countspace {
+	background: #b0e2ff;
+}
+
+.countbg {
+	background: #b0e2ff;
 }
 
 </style>
@@ -170,15 +182,15 @@ h2.history-text::after {
 	<header class="header">
 		<div class="container">
 			<div class="row">
-				<div class="col-md-4 ">
+				<!--<div class="col-md-4 ">
 					<div class="navbar-header">
 						<button type="button" class="navbar-toggle menu-button" data-toggle="collapse" data-target="#myNavbar">
 							<span class="glyphicon glyphicon-align-justify"></span>
 						</button>
 						<a class="navbar-brand logo" href="#">Super Smash Bros University</a>
 					</div>
-				</div>
-				<div class="col-md-8">
+				</div> -->
+				<div class="col-md-offset-4 col-md-8">
 					<nav class="collapse navbar-collapse" id="myNavbar" role="navigation">
 						<ul class="nav navbar-nav navbar-right menu">
 							<li><a href="#page-top" class="page-scroll active">Event Info</a></li>
@@ -230,7 +242,7 @@ h2.history-text::after {
 		<!-- HISTORY SECTION -->
 		<div class="container-fluid history" id="section2">
 			<div class="container">
-				<div class="row">
+				<div class="row" id="starts">
 					<div class="col-md-12">
 						<h2 class="text-center history-text">History</h2>
 						<div class="col-md-6 col-sm-12 col-xs-12 icon-box">
@@ -307,7 +319,7 @@ h2.history-text::after {
 	<!-- REGISTER/DONATE SECTION -->
 	<div class="container-fluid register" id="section3">
 		<div class="container">
-			<div class="row" id="starts">
+			<div class="row">
 				<div class="col-md-12">
 					<!-- TODO: decide on title for this section -->
 					<h2 class="text-center register-text">Participate</h2>
