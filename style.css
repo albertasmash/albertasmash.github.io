@@ -55,10 +55,10 @@
 {
 	background-attachment:fixed;
 		background-color: #645862;
-		background-image:  url("images/samus_pe_bg.png");
+		background-image:  url("images/samus_pe_bg_large.png");
 		background-position: top center;
 		background-repeat: no-repeat;
-		background-size: contain;
+		background-size: cover;
 		color: white;
 		cursor: default;
 		padding: 180px 0 120px;
