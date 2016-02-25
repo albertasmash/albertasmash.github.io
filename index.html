@@ -41,7 +41,14 @@ border: 2px solid magenta;
 }
 .counter-item {
 	border: 2px solid blue;
-} */
+}
+#photos-mainimage {
+	border: 2px solid magenta;
+}
+.thumbnail img {
+	max-height: 60px; /* 60 for 3-wide, 91 for 2-wide - probably don't need this if we just ensure all pictures have the same aspect ratio
+}
+*/
 
 .twitchplayer iframe {
 	display: block;
@@ -60,12 +67,10 @@ border: 2px solid magenta;
 	float: left;
 	width: 33.33333%;
 }
-.thumbnail img {
-	max-height: 60px; /* 60 for 3-wide, 91 for 2-wide - probably don't need this if we just ensure all pictures have the same aspect ratio */
-}
+
 #photos-maincaption h3 {
 	text-align: center;
-	padding: 30px 0px 10px 0px;
+	padding: 10px 0px 10px 0px;
 	font-size: 15px;
 	float: left;
 	width: 100%;
@@ -74,14 +79,14 @@ border: 2px solid magenta;
 	color:#000;
 	margin:0px;
 	font-family: 'Roboto', sans-serif;
-	height: 100px;
 }
 #photos-mainimage img {
-	position: relative;
-	float: left;
+	display: block;
 	width: 100%;
-	height: auto;
+	margin-left: auto;
+	margin-right: auto;
 }
+
 
 .info-text
 {
@@ -173,6 +178,15 @@ h2.history-text::after {
 .countbg {
 	background: #b0e2ff;
 }
+
+.credit {
+	text-align: center;
+	font-style: italic;
+	width: 100%;
+	padding-top: 10px;
+}
+
+
 
 </style>
 </head>
@@ -381,8 +395,13 @@ h2.history-text::after {
 					<h2 class="text-center photos-text">Photos</h2>
 
 					<div class="col-md-12 col-sm-12 col-xs-12">
-						<div class="col-md-4 col-sm-4 col-xs-4" id="photos-thumbnails">
-							<i>Loading thumbnails...</i>
+						<div class="col-md-4 col-sm-4 col-xs-4">
+							<div class="col-md-12 col-sm-12 col-xs-12" id="photos-thumbnails">
+								<i>Loading thumbnails...</i>
+							</div>
+							<div class="col-md-12 col-sm-12 col-xs-12">
+								<p class="credit">Credits to Sekiya Photography unless stated otherwise</p>
+							</div>
 						</div>
 
 						<div class="col-md-8 col-sm-8 col-xs-8 photos-display">
@@ -563,7 +582,7 @@ h2.history-text::after {
 			else {
 				id = id + i;
 			}
-			photoarray = photoarray + "<div class=\"thumbnail\"><img src=\"images/image" + id + ".jpg\" /></div>";
+			photoarray = photoarray + "<div class=\"thumbnail\"><img src=\"images/image" + id + ".png\" /></div>";
 		}
 		$('#photos-thumbnails').html(photoarray);
 		updateImage("001");
@@ -583,7 +602,7 @@ h2.history-text::after {
 		xmlreq.open("GET", "captions.xml", true);
 		xmlreq.send();
 
-		return 18; // TEMPORARY
+		return 12; // TEMPORARY
 	}
 
 	/* update the main image and the caption */
@@ -604,7 +623,7 @@ h2.history-text::after {
 		xmlreq.open("GET", "captions.xml", true);
 		xmlreq.send();
 
-		$('#photos-mainimage').hide().html("<img src=\"images/image" + id + ".jpg\" />").fadeIn(200);
+		$('#photos-mainimage').hide().html("<img class=\"mainimage\" src=\"images/image" + id + ".png\" />").fadeIn(200);
 	}
 
 	</script>
