@@ -41,16 +41,16 @@ border: 3px solid blue;
 border: 2px solid magenta;
 }
 .col-md-6 {
-	border: 2px solid magenta;
+border: 2px solid magenta;
 }
 .counter-item {
-	border: 2px solid blue;
+border: 2px solid blue;
 }
 #photos-mainimage {
-	border: 2px solid magenta;
+border: 2px solid magenta;
 }
 .thumbnail img {
-	max-height: 60px; /* 60 for 3-wide, 91 for 2-wide - probably don't need this if we just ensure all pictures have the same aspect ratio
+max-height: 60px; /* 60 for 3-wide, 91 for 2-wide - probably don't need this if we just ensure all pictures have the same aspect ratio
 }
 */
 .reg-icon {
@@ -99,15 +99,15 @@ border: 2px solid magenta;
 	font-weight: 700;
 	letter-spacing: 5px;
 	margin-bottom:30px;
-	margin-top:30px;
+	margin-top:40px;
 }
 h2.info-text::after {
-    display: block;
-    margin: 17px auto 0px;
-    width: 80px;
-    height: 1px;
-    background: #000 none repeat scroll 0% 0%;
-    content: "";
+	display: block;
+	margin: 17px auto 0px;
+	width: 80px;
+	height: 1px;
+	background: #000 none repeat scroll 0% 0%;
+	content: "";
 }
 
 .counter-text {
@@ -117,10 +117,10 @@ h2.info-text::after {
 
 .value
 {
-		color: #8ab839;
-		text-align: center;
-		float: left;
-		background: white;
+	color: #8ab839;
+	text-align: center;
+	float: left;
+	background: white;
 }
 .desc h4
 {
@@ -140,7 +140,7 @@ h2.info-text::after {
 .history
 {
 	background: #ff9933;
-	padding: 60px 0px;
+	padding: 30px 0px;
 }
 .history-text
 {
@@ -151,29 +151,30 @@ h2.info-text::after {
 	margin-top:30px;
 }
 h2.history-text::after {
-    display: block;
-    margin: 17px auto 0px;
-    width: 80px;
-    height: 1px;
-    background: #000 none repeat scroll 0% 0%;
-    content: "";
+	display: block;
+	margin: 17px auto 0px;
+	width: 80px;
+	height: 1px;
+	background: #000 none repeat scroll 0% 0%;
+	content: "";
 }
 
 .thumbnail {
-  display: block;
-  padding: 2px;
+	display: block;
+	padding: 2px;
 	margin-bottom: 0px;
-  line-height: 1.42857143;
-  background-color: #8ab839;
-  border: 1px solid #ddd;
-  border-radius: 4px;
-  -webkit-transition: border .2s ease-in-out;
-  -o-transition: border .2s ease-in-out;
-  transition: border .2s ease-in-out;
+	line-height: 1.42857143;
+	background-color: #8ab839;
+	border: 1px solid #ddd;
+	border-radius: 4px;
+	-webkit-transition: border .2s ease-in-out;
+	-o-transition: border .2s ease-in-out;
+	transition: border .2s ease-in-out;
 }
 
 .main {
 	background: #9fce26;
+	padding: 30px 0px;
 }
 
 .countspace {
@@ -190,7 +191,26 @@ h2.history-text::after {
 	padding: 30px;
 }
 
+h4.byoc {
+	color: red;
+}
 
+#map-canvas {
+	/*margin-left:250px;
+	margin-right:250px;*/
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 80%;
+}
+
+h3.event {
+	font-family: 'Poppins', sans-serif;
+	font-weight: 400;
+	text-align: center;
+	color: #000;
+	font-size: 20px;
+}
 
 </style>
 </head>
@@ -237,172 +257,180 @@ h2.history-text::after {
 					</div>
 				</div>
 			</div>
-			<div class="col-md-12 col-sm-12 col-xs-12 info desc">
-				<h2 class="text-center info-text">Event Info</h2>
+		</div>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 col-sm-12 col-xs-12 info desc">
+					<h2 class="text-center info-text">Event Info</h2>
 					<p>Super Smash Bros University [SSBU] welcomes everyone to come to our fundraiser Smash Bros tournament for the Autism Society of Edmonton Area in memory of Jarrett "Solaris" Bortscher.</p>
-						<ul>
-							<li><h4>Date:</h4> March 12, 2016</li>
-							<li><h4>Time:</h4> 10:00 AM</li>
-							<li><h4>Location:</h4> The Church at South Edmonton - 9910 67 Ave NW, T6E 0P5</li>
+					<ul>
+						<li><h4 class="byoc">IMPORTANT: PLEASE BRING YOUR OWN CONTROLLER!</h4></li>
+						<li><h4>Date:</h4> March 12, 2016</li>
+						<li><h4>Time:</h4> 10:00 AM</li>
+						<li><h4>Location:</h4> The Church at South Edmonton - 9910 67 Ave NW, T6E 0P5</li>
+						<li><h4>Cost:</h4> <ul>
 							<li>$15 entry fee per person minimum</li>
 							<li>$5 for venue</li>
 							<li>$10+ for donation</li>
 						</ul>
+					</li>
+				</ul>
 
-						<div id="map-canvas" style="margin-left:250px;margin-right:250px;"></div>
+				<div id="map-canvas"></div>
+
+				<br />
+
+				<h2 class="text-center info-text">Events</h2>
+				<!-- <ul> -->
+				<h3 class="event">Super Smash Bros. Melee Singles / Doubles</h3>
+				<h3 class="event">Edmonton vs. Calgary Crew battle</h3>
+				<h3 class="event">Side Event: Project M</h3>
+				<h3 class="event">Side Event: Falco only (Melee)</h3>
+				<h3 class="event">$1 Raffles for prizes at the event!</h3>
+				<!-- </ul> -->
+
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+
+<!-- HISTORY SECTION -->
+<div class="container-fluid history" id="history">
+	<div class="container">
+		<div class="row" id="starts">
+			<div class="col-md-12 desc">
+				<h2 class="text-center history-text">History</h2>
+
+				<p>Jarrett “Solaris” Bortscher was a talented Samus player and valued community member from Alberta, Canada who
+					had high-functioning autism and chronic catatonia. Despite these challenges, Jarrett always pushed himself to
+					excel in everything that he loved. Sadly, as Jarrett’s medical support began to dwindle upon reaching adulthood
+					and his catatonia began having more and more of an impact on his life, Jarrett took his own life two years ago in
+					September of 2012 at the age of 18 after a long fought battle with depression.</p>
+
+				</br>
+
+				<h3 class="text-center history-text">About Jarrett</h4>
+
+					<p>Those who are catatonic suffer from symptoms such as mutism, rigidity, and loss in motor skills. Despite his
+						inhibited motor skills, Jarrett was an incredibly talented break dancer and the most absurdly technical Samus
+						player here in the great north. Most people would just use Samus’ extender and her superwavedash to style, but
+						Solaris utilized them in tournament matches. If you were able to take a game off him, you get to choose between
+						letting him take you to Yoshi’s Story or to Pokemon Stadium, but either way you were setting yourself up to play a
+						game of Galaga. Although his Asperger’s impaired his speech, you could still see the glow and excitement in his
+						eyes when he landed an incredible combo or pulled off a clutch win. He was a smasher who exemplified the depths
+						of the human spirit despite incredible adversity.</p>
 
 					</br>
-					<h1 style="text-align:center;">Important! Please Bring Your Own Controller!</h1>
 
-						<h2 class="text-center info-text">Events</h2>
-							<!-- <ul> -->
-								<h3 style="text-align:center;">Super Smash Bros. Melee Singles / Doubles</h3>
-								<h3 style="text-align:center;">Edmonton VS Calgary Crew battle</h3>
-								<h3 style="text-align:center;">For Fun Side Event (TBA)</h3>
-								<h3 style="text-align:center;">$1 Raffles for prizes at the event!</h3>
-							<!-- </ul> -->
+					<p>Jarrett received proper medical support until he reached 18 and was released from the child care system at a local
+						hospital. Jarrett was waiting to transition into the adult psychiatric system, which was expected to take upwards to
+						two years. Unfortunately, Jarrett went missing on September 23, 2012 after not returning from a walk. There were
+						massive search parties with emergency crews, friends, and family. His body was later found in the North
+						Saskatchewan River three days later by emergency crews near a local bridge.</p>
 
+					</br>
+
+					<h3 class="text-center info-text">The Alberta Smash Community</h4>
+
+						<p>Although his loss is tragic, our community continues to gather annually not to mourn, but to celebrate Jarrett; we
+							celebrate the laughter and joy he shared with us over the 10 years he had been a part of our community, and the
+							warmth and inspiration that he has left behind. This year, the Alberta Smash Community is hosting Jarrett’s
+							Tournament 4 to raise awareness for autism and to raise awareness for services for those suffering from mental
+							health issues and depression. In addition, 100% of the proceeds raised for Jarrett’s Tournament 4 will be donated to the Autism Society of Edmonton Area.</p>
+
+						</br>
+
+						<p>Jarrett was everything that made the smash community such an incredible community to be a part of. He was kind
+							hearted, enthusiastic, and, of course, fiercely competitive. He was a friend, a partner, and a rival. And when he left
+							he reminded us of how supportive and accepting the smash community is.</p>
+
+						</br>
+
+					</div>
+				</div>
 			</div>
 		</div>
-	</div>
 
-
-
-
-		<!-- HISTORY SECTION -->
-		<div class="container-fluid history" id="history">
+		<!-- REGISTER/DONATE SECTION -->
+		<div class="container-fluid register" id="participate">
 			<div class="container">
-				<div class="row" id="starts">
-					<div class="col-md-12 desc">
-						<h2 class="text-center history-text">History</h2>
-
-							<p>Jarrett “Solaris” Bortscher was a talented Samus player and valued community member from Alberta, Canada who
-								had high-functioning autism and chronic catatonia. Despite these challenges, Jarrett always pushed himself to
-								excel in everything that he loved. Sadly, as Jarrett’s medical support began to dwindle upon reaching adulthood
-								and his catatonia began having more and more of an impact on his life, Jarrett took his own life two years ago in
-								September of 2012 at the age of 18 after a long fought battle with depression.</p>
-
-							</br>
-
-							<h3 class="text-center history-text">About Jarrett</h4>
-
-							<p>Those who are catatonic suffer from symptoms such as mutism, rigidity, and loss in motor skills. Despite his
-								inhibited motor skills, Jarrett was an incredibly talented break dancer and the most absurdly technical Samus
-								player here in the great north. Most people would just use Samus’ extender and her superwavedash to style, but
-								Solaris utilized them in tournament matches. If you were able to take a game off him, you get to choose between
-								letting him take you to Yoshi’s Story or to Pokemon Stadium, but either way you were setting yourself up to play a
-								game of Galaga. Although his Asperger’s impaired his speech, you could still see the glow and excitement in his
-								eyes when he landed an incredible combo or pulled off a clutch win. He was a smasher who exemplified the depths
-								of the human spirit despite incredible adversity.</p>
-
-							</br>
-
-							<p>Jarrett received proper medical support until he reached 18 and was released from the child care system at a local
-								hospital. Jarrett was waiting to transition into the adult psychiatric system, which was expected to take upwards to
-								two years. Unfortunately, Jarrett went missing on September 23, 2012 after not returning from a walk. There were
-								massive search parties with emergency crews, friends, and family. His body was later found in the North
-								Saskatchewan River three days later by emergency crews near a local bridge.</p>
-
-							</br>
-
-							<h3 class="text-center info-text">The Alberta Smash Community</h4>
-
-							<p>Although his loss is tragic, our community continues to gather annually not to mourn, but to celebrate Jarrett; we
-								celebrate the laughter and joy he shared with us over the 10 years he had been a part of our community, and the
-								warmth and inspiration that he has left behind. This year, the Alberta Smash Community is hosting Jarrett’s
-								Tournament 4 to raise awareness for autism and to raise awareness for services for those suffering from mental
-								health issues and depression. In addition, 100% of the proceeds raised for Jarrett’s Tournament 4 will be donated to the Autism Society of Edmonton Area.</p>
-
-							</br>
-
-							<p>Jarrett was everything that made the smash community such an incredible community to be a part of. He was kind
-								hearted, enthusiastic, and, of course, fiercely competitive. He was a friend, a partner, and a rival. And when he left
-								he reminded us of how supportive and accepting the smash community is.</p>
-
-							</br>
-
+				<div class="row">
+					<div class="col-md-12">
+						<!-- TODO: decide on title for this section -->
+						<h2 class="text-center register-text">Participate</h2>
+						<div class="col-md-4 col-sm-12 col-xs-12 icon-box">
+							<div class="col-md-2 col-sm-2 col-xs-12">
+								<div class="iconing">
+									<a href="https://www.facebook.com/events/1036431323065410/"><img class="reg-icon" src="images/fb.jpg"></img></a>
+								</div>
+							</div>
+							<div class="col-md-8 col-md-offset-2 col-sm-offset-1 col-sm-9 col-xs-12 icon-text-box">
+								<h4>Facebook</h4>
+								<p>Join our Facebook event for up-to-date news and information.</p>
+							</div>
+						</div>
+						<div class="col-md-4 col-sm-12 col-xs-12 icon-box">
+							<div class="col-md-2 col-sm-2 col-xs-12">
+								<div class="iconing">
+									<a href="http://www.smash.gg/jt4"><img class="reg-icon" src="images/smashgg.png"></img></a>
+								</div>
+							</div>
+							<div class="col-md-8 col-md-offset-2 col-sm-offset-1 col-sm-9 col-xs-12 icon-text-box">
+								<h4>smash.gg</h4>
+								<p>Preregister for JT4 on the popular tournament tracker.</p>
+							</div>
+						</div>
+						<div class="col-md-4 col-sm-12 col-xs-12 icon-box">
+							<div class="col-md-2 col-sm-2 col-xs-12">
+								<div class="iconing">
+									<img class="reg-icon" src="images/paypal.png"></img>
+								</div>
+							</div>
+							<div class="col-md-8 col-md-offset-2 col-sm-offset-1 col-sm-9 col-xs-12 icon-text-box">
+								<h4>Donate via Paypal</h4>
+								<p>Want to contribute to the cause but can't make it in person? You can always donate without attending the event!
+									<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+										<input type="hidden" name="cmd" value="_s-xclick">
+										<input type="hidden" name="hosted_button_id" value="S33NB6SZ32ASS">
+										<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!" style="display: block; margin-left: auto; margin-right: auto;">
+										<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+									</form>
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-12 countbg countspace">
+						<div class="col-xs-12 col-sm-12 col-md-12">
+							<div class="counter-item">
+								<i class="glyphicon glyphicon-user"></i>
+								<div class="timer" data-from="0" data-to="189" data-speed="5000" data-refresh-interval="50"></div>
+								<h5>Entrants For The Event via Facebook</h5>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
 		</div>
 
-	<!-- REGISTER/DONATE SECTION -->
-	<div class="container-fluid register" id="participate">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-12">
-					<!-- TODO: decide on title for this section -->
-					<h2 class="text-center register-text">Participate</h2>
-					<div class="col-md-4 col-sm-12 col-xs-12 icon-box">
-						<div class="col-md-2 col-sm-2 col-xs-12">
-							<div class="iconing">
-								<a href="https://www.facebook.com/events/1036431323065410/"><img class="reg-icon" src="images/fb.jpg"></img></a>
-							</div>
-						</div>
-						<div class="col-md-8 col-md-offset-2 col-sm-offset-1 col-sm-9 col-xs-12 icon-text-box">
-							<h4>Facebook</h4>
-							<p>Join our Facebook event for up-to-date news and information.</p>
-						</div>
-					</div>
-					<div class="col-md-4 col-sm-12 col-xs-12 icon-box">
-						<div class="col-md-2 col-sm-2 col-xs-12">
-							<div class="iconing">
-								<a href="http://www.smash.gg/jt4"><img class="reg-icon" src="images/smashgg.png"></img></a>
-							</div>
-						</div>
-						<div class="col-md-8 col-md-offset-2 col-sm-offset-1 col-sm-9 col-xs-12 icon-text-box">
-							<h4>smash.gg</h4>
-							<p>Preregister for JT4 on the popular tournament tracker.</p>
-						</div>
-					</div>
-					<div class="col-md-4 col-sm-12 col-xs-12 icon-box">
-						<div class="col-md-2 col-sm-2 col-xs-12">
-							<div class="iconing">
-								<img class="reg-icon" src="images/paypal.png"></img>
-							</div>
-						</div>
-						<div class="col-md-8 col-md-offset-2 col-sm-offset-1 col-sm-9 col-xs-12 icon-text-box">
-							<h4>Donate via Paypal</h4>
-							<p>Want to contribute to the cause but can't make it in person? You can always donate without attending the event!
-								<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-									<input type="hidden" name="cmd" value="_s-xclick">
-									<input type="hidden" name="hosted_button_id" value="S33NB6SZ32ASS">
-									<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
-									<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
-								</form>
-							</p>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-12 countbg countspace">
-					<div class="col-xs-12 col-sm-12 col-md-12">
-						<div class="counter-item">
-							<i class="glyphicon glyphicon-user"></i>
-							<div class="timer" data-from="0" data-to="181" data-speed="5000" data-refresh-interval="50"></div>
-							<h5>Entrants For The Event via Facebook</h5>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
 
 
 
+		<!-- PHOTOS SECTION -->
+		<div class="container-fluid photos" id="photos">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12 col-sm-12 col-xs-12 photos-list">
+						<h2 class="text-center photos-text">Photos</h2>
 
-	<!-- PHOTOS SECTION -->
-	<div class="container-fluid photos" id="photos">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-12 col-sm-12 col-xs-12 photos-list">
-					<h2 class="text-center photos-text">Photos</h2>
-
-					<div class="col-md-12 col-sm-12 col-xs-12">
-						<div class="col-md-4 col-sm-4 col-xs-4">
-							<div class="col-md-12 col-sm-12 col-xs-12" id="photos-thumbnails">
-								<i>Loading thumbnails...</i>
-							</div>
-							<!--<div class="col-md-12 col-sm-12 col-xs-12">
+						<div class="col-md-12 col-sm-12 col-xs-12">
+							<div class="col-md-4 col-sm-4 col-xs-4">
+								<div class="col-md-12 col-sm-12 col-xs-12" id="photos-thumbnails">
+									<i>Loading thumbnails...</i>
+								</div>
+								<!--<div class="col-md-12 col-sm-12 col-xs-12">
 								<p class="credit">Credits to Sekiya Photography unless stated otherwise</p>
 							</div>-->
 						</div>
@@ -452,7 +480,7 @@ h2.history-text::after {
 					<div class="col-md-12 col-sm-12 col-xs-12 desc">
 						<p style="text-align:center;">We could always use more CRTs, gaming consoles, or raffle prizes!  If your corporation is interested
 							in being a sponsor for our event, please contact us at <a href="mailto:info@4jarrett.me">info@4jarrett.me</a></p>
-					</div>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -481,7 +509,7 @@ h2.history-text::after {
 
 
 
-<!-- ******************************* SCRIPTS ******************************* -->
+	<!-- ******************************* SCRIPTS ******************************* -->
 	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 	<!-- Include all compiled plugins (below), or include individual files as needed -->
@@ -501,10 +529,10 @@ h2.history-text::after {
 		var map = new google.maps.Map(mapCanvas, mapOptions);
 
 		var marker = new google.maps.Marker({
-    	position: {lat: 53.503698, lng: -113.487486},
-    	map: map,
-    	title: 'Tourney Location!'
-  	});
+			position: {lat: 53.503698, lng: -113.487486},
+			map: map,
+			title: 'Tourney Location!'
+		});
 
 	}
 	google.maps.event.addDomListener(window, 'load', initialize);
