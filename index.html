@@ -432,33 +432,22 @@ h2.history-text::after {
 					<h2 class="text-center contact-text">Sponsors</h2>
 
 					<div class="col-md-12 col-sm-12 col-xs-12 desc text-center">
-						<p style="text-align:center;">We would like to give a huge thank you to our sponsors and donations below.</p>
+						<p style="text-align:center;">We would like to give a huge thank you to our sponsors and donators below.</p>
 					</div>
+
 					<div class="col-md-12 col-sm-12 col-xs-12">
 
 						<div class="col-md-4 col-sm-6 col-xs-12">
-							<img src="images/borz.jpg" class="logo_image" />
+							<img src="images/logo_borz.png" class="logo_image" />
 						</div>
 						<div class="col-md-4 col-sm-6 col-xs-12">
-							<img src="images/GDX.png" class="logo_image" />
+							<img src="images/logo_GDX.png" class="logo_image" />
 						</div>
 						<div class="col-md-4 col-sm-6 col-xs-12">
-							<img src="images/maccraft.png" class="logo_image" />
+							<img src="images/logo_mac.png" class="logo_image" />
 						</div>
 					</div>
 
-					<!-- <div class="col-md-12 col-sm-12 col-xs-12">
-
-						<div class="col-md-4 col-sm-6 col-xs-12">
-							<img src="images/logo_intel.png" class="logo_image" />
-						</div>
-						<div class="col-md-4 col-sm-6 col-xs-12">
-							<img src="images/borz.jpg" class="logo_image" />
-						</div>
-						<div class="col-md-4 col-sm-6 col-xs-12">
-							<img src="images/logo_intel.png" class="logo_image" />
-						</div>
-					</div> -->
 
 					<div class="col-md-12 col-sm-12 col-xs-12 desc">
 						<p style="text-align:center;">We could always use more CRTs, gaming consoles, or raffle prizes!  If your corporation is interested
@@ -641,7 +630,9 @@ h2.history-text::after {
 		xmlreq.open("GET", "captions.xml", true);
 		xmlreq.send();
 
-		$('#photos-mainimage').hide().html("<img class=\"mainimage\" src=\"images/image" + id + ".png\" />").fadeIn(200);
+		/*$('#photos-mainimage').hide().html("<img class=\"mainimage\" src=\"images/image" + id + ".png\" />").fadeIn(200);*/
+		$('#photos-mainimage').html("<img class=\"mainimage\" src=\"images/image" + id + ".png\" />");
+
 	}
 
 	</script>
